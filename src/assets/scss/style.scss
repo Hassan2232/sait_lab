@@ -1,0 +1,73 @@
+@import "vars";
+@import "vendor/reset";
+@import "breakpoint";
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #040405;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: $white;
+    font-family: 'Inter', sans-serif;
+}
+
+.body.active{
+  overflow: hidden;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* полоса прокрутки (скроллбар) */
+::-webkit-scrollbar {
+    width: 10px; 
+    height: 8px;
+    background-color: transparent;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+    background-color: #FFB359;
+    border-radius: 9em;
+}
+
+::-webkit-input-placeholder {
+    color: rgba(69, 69, 69, 0.5);;
+  }
+::-moz-placeholder { /* Firefox 19+ */
+    color: rgba(69, 69, 69, 0.5);;
+  }
+:-ms-input-placeholder {
+    color: rgba(69, 69, 69, 0.5);;
+  }
+:-moz-placeholder { /* Firefox 18- */
+    color: brgba(69, 69, 69, 0.5);;
+  }
+
+
+/* Blocks */
+
+@import "./blocks/hedaer.scss";
+@import "./blocks/section.scss";
+@import "./blocks/photo.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/sidebar.scss";
+@import "./blocks/about.scss";
+@import "./blocks/conact__form.scss";
+
+
+
+
+
+
+
+
+

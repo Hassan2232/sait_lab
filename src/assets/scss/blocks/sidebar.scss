@@ -1,0 +1,13 @@
+.sidebar{
+    margin-top: 180px;
+    padding: 0 50px;
+    position: absolute;
+
+    @include laptop-mini{
+        display: none;
+    }
+}
+
+.side__img{
+    width: 20rem;
+}

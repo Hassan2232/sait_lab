@@ -1,0 +1,45 @@
+.photo__item{
+    width: 450px;
+    margin: 80px;
+
+    div{
+        margin-bottom: 30px;
+    }
+
+    @include mobile{
+        transform: scale(.9);
+    }
+}
+
+.photo__titile{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 72px;
+    color: #FFFFFF;
+}
+
+.photo__text{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.btn{
+    padding: 20px 30px;
+    border: 2px solid $yellow;
+    border-radius: 15px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: $yellow;
+    font-weight: 600;
+    font-size: calc(15px + (20 - 15) * ((100vw - 500px) / (1920 - 500)));
+    line-height: 41px;
+    transition: .3s linear;
+
+    &:hover{
+        background-color: $yellow;
+        color: #FFFFFF;
+    }
+  
+}
