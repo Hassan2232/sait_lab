@@ -848,3 +848,52 @@ a:hover::after {
   right: -200px;
   z-index: 2;
 }
+
+.purp__text {
+  position: absolute;
+  top: 300px;
+  right: -250px;
+  z-index: 10;
+}
+.purp__text .purp__title {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  width: 300px;
+  margin-bottom: 32px;
+}
+
+.footer {
+  padding: 100px 0;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 75px;
+  grid-row-gap: 20px;
+}
+
+.footer__item {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: right;
+  margin-bottom: 16px;
+}
+.footer__item a {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  color: #FD4455;
+}
