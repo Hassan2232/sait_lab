@@ -1,0 +1,36 @@
+.work{
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+    img{
+        object-fit: contain;
+        width: 100%;
+    }
+}
+
+.work__item{
+    position: absolute;
+    bottom: 100px;
+    text-align: center;
+    width: 100%;
+}
+
+.work__title{
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 66px;
+    margin-bottom: 16px;
+}
+
+.work__text{
+    width: 450px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 auto;
+}

@@ -1,0 +1,46 @@
+.section__purple{
+    padding: 300px 0;
+    background-color: #C2B8CC;
+}
+
+.purple__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: relative;
+    width: 458px;
+    margin: 0 auto;
+}
+
+.purple__img{
+    position: absolute;
+}
+
+.Purp-center{
+    z-index: 2;
+}
+
+.Purp-abstractLeft{
+    bottom: 100px;
+    left: -200px;
+    z-index: 1;
+}
+
+.Purp-abstractRight{
+    bottom: 100px;
+    right: -100px;
+    z-index: 1;
+}
+
+.Purp-left{
+    bottom: -100px;
+    left: -150px;
+    z-index: 2;
+}
+
+.Purp-right{
+    top: -100px;
+    right: -200px;
+    z-index: 2;
+}

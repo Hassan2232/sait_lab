@@ -1,0 +1,60 @@
+.focused{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 80vh;
+}
+
+.focused__title{
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 20px;
+}
+
+.focused__subtitle{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $black;
+    width: 387px;
+}
+
+.focused__img-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .focus__img-vector{
+        position: absolute;
+        top: 0px;
+        left: 300px;
+        z-index: -1;
+    }
+}
+
+
+
+.focused__img-right{
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+
+    .focus__img-vector{
+        position: absolute;
+        bottom: 0;
+        left: -300px;
+        z-index: -1;
+    }
+}

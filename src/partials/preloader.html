@@ -1,6 +1,15 @@
 <div id="bg" class="bg__preloader"></div>
 <div id="preloader">
     <div class="pre_wrapper">
-        <div id="text__loader" class="text__loader">stuff agency</div>
+        <div id="text__loader" class="text__loader"><img src="../assets/images/Group 40.png"></div>
     </div>
 </div>
+
+<script>
+    $(window).on('load', function () {
+        var $preloader = $('#preloader');
+        var $bg = $('#bg');
+        $bg.delay(1500).fadeOut('slow');
+        $preloader.delay(300).fadeOut('slow');
+    });
+  </script>

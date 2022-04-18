@@ -1,0 +1,53 @@
+.services{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin: 100px 0;
+}
+
+.serveces_item{
+    width: 190px;
+    overflow: hidden;
+    object-fit: cover;
+    transition: .4s linear;
+    cursor: pointer;
+
+    &:hover{
+        width: 100%;
+    }
+
+    &:nth-child(2){
+        margin-top: 150px;
+    }
+    &:nth-child(3){
+        margin-top: 100px;
+    }
+    
+}
+
+.services__title{
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+    margin: 32px 0;
+}
+
+.services__text{
+    position: absolute;
+    bottom: -50px;
+    left: 35%;
+    transform: translateX(-35%);
+    text-align: end;
+    .services__tit{
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 48px;
+        width: 320px;
+        margin-bottom: 35px;
+    }
+
+}

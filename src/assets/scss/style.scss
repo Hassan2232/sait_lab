@@ -2,18 +2,20 @@
 @import "vendor/reset";
 @import "breakpoint";
 
-
+/*developer_MYTH_MAKER_DF_*/
 html {
     font-size: 62.5%;
 }
 
 body {
-    background-color: #040405;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: #DFCCC2;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
     font-size: 1.4rem;
     line-height: 1.5;
-    color: $white;
+    color: $blue-dark;
     font-family: 'Inter', sans-serif;
+    color: $white;
 }
 
 .body.active{
@@ -35,7 +37,7 @@ body {
 
 /* ползунок скроллбара */
 ::-webkit-scrollbar-thumb {
-    background-color: #FFB359;
+    background-color: $red;
     border-radius: 9em;
 }
 
@@ -52,16 +54,76 @@ body {
     color: brgba(69, 69, 69, 0.5);;
   }
 
+  .bg__preloader{
+    width: 100%;
+    height: 100vh;
+    z-index: 1999;
+    position: fixed;
+    background-color: $white;
+  }
+
+  #preloader{
+    z-index: 2000;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    
+    background-color: $white;  
+  }
+
+  a{
+    text-decoration: none;
+    color: $white;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    position: relative;
+
+      &::after{
+        content: '';
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        background-color: $red;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: .3s linear;
+    }
+
+      &:hover::after{
+        width: 100%
+      }
+  }
+
+  .text-center{
+    text-align: center
+  }
+
+  .mt_150{
+    margin-top: 150px; 
+  }
+
+  .mt_300{
+    margin-top: 300px;
+  }
 
 /* Blocks */
 
 @import "./blocks/hedaer.scss";
 @import "./blocks/section.scss";
-@import "./blocks/photo.scss";
-@import "./blocks/footer.scss";
-@import "./blocks/sidebar.scss";
-@import "./blocks/about.scss";
-@import "./blocks/conact__form.scss";
+@import "./blocks/focused.scss";
+@import "./blocks/green.scss";
+@import "./blocks/services.scss";
+@import "./blocks/work.scss";
+@import "./blocks/purple.scss";
+
 
 
 

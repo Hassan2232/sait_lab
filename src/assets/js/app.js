@@ -20,6 +20,10 @@ $('.close__btn').on('click', function() {
     $('.modal').removeClass('active');
 });
 
+$('.btn__close').on('click', function() {
+    $('.nav').toggleClass('active');
+});
+
 $('.btn__nav').on('click', function() {
     $('.nav').toggleClass('active');
     $('.btn__nav').toggleClass('active');
@@ -28,6 +32,10 @@ $('.btn__nav').on('click', function() {
     $('.header').toggleClass('active');
 });
 
-
+$('.burger__btn').on('click', function() {
+    $('.btn__menu').toggleClass('active');
+    $('.menu').toggleClass('active');
+    $('body').toggleClass('active');
+});
 
 
