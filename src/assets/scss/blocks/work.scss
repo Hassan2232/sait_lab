@@ -14,6 +14,14 @@
     bottom: 100px;
     text-align: center;
     width: 100%;
+
+    @include mobile{
+        position:  inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
 .work__title{

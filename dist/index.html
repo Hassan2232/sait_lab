@@ -31,14 +31,18 @@
         <!-- Header -->
         <header class="header">
                 <nav class="nav__header">
+                    <div class="navBtn__close">
+                        <div></div>
+                    </div>
                     <div class="nav__item-left">
                         <a href="#">Menus</a>
                         <a href="#">About & Careers</a>
-                        <a href="#">Contact</a>
+                        <a href="#contact" class="scrollto">Contact</a>
+                        
                     </div>
                     <h1 class="logo">debonaire</h1>
                     <div class="nav__item-right">
-                        <a href="#">Book an Appoitment</a>
+                        <a href="reg.html">Book an Appoitment</a>
                     </div>
                 </nav>
         </header>    
@@ -48,11 +52,13 @@
                     <div class="section__prew-img">
                         <h1 class="section__prew-title">Hi, we are Debonaire.
                             Ready to create an art form on your body. </h1>
-                        <img data-aos="zoom-in" data-aos-duration="1000" class="img-prew img__center" src="./assets/images/image-1.png">
-                        <img data-aos="zoom-in" data-aos-duration="800" class="img-prew img__right" src="./assets/images/image-2.png">
-                        <img data-aos="zoom-in" data-aos-duration="1500" class="img-prew img__abstract-top" src="./assets/images/abstract-1.png">
-                        <img data-aos="zoom-in" data-aos-duration="1100" class="img-prew img__abstract-bottom" src="./assets/images/abstract-2.png">
-                        <img data-aos="zoom-in" data-aos-duration="1200" class="img-prew img__abstract-left" src="./assets/images/vector-1.png">
+                        <div class="image__item">
+                            <img data-aos="zoom-in" data-aos-duration="1000" class="img-prew img__center" src="./assets/images/image-1.png">
+                            <img data-aos="zoom-in" data-aos-duration="800" class="img-prew img__right" src="./assets/images/image-2.png">
+                            <img data-aos="zoom-in" data-aos-duration="1500" class="img-prew img__abstract-top" src="./assets/images/abstract-1.png">
+                            <img data-aos="zoom-in" data-aos-duration="1100" class="img-prew img__abstract-bottom" src="./assets/images/abstract-2.png">
+                            <img data-aos="zoom-in" data-aos-duration="1200" class="img-prew img__abstract-left" src="./assets/images/vector-1.png">
+                        </div>
                         <p class="prew__text">Debonaire is natural product-based, hair design & boutique.</p>
                     </div>
             </div>
@@ -143,7 +149,7 @@
             </div>
         </section>
         
-        <footer class="footer">
+        <footer class="footer" id="contact">
             <div class="container">
                 <nav class="footer__nav">
                     <a href="#">Terms of Service</a>

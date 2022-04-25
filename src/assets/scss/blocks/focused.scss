@@ -4,6 +4,14 @@
     align-items: center;
     position: relative;
     height: 80vh;
+
+    @include tablet{
+        flex-direction: column;
+    }
+}
+
+.focused__text{
+    z-index: 10;
 }
 
 .focused__title{
@@ -30,10 +38,21 @@
     top: 0;
     left: 0;
 
+    @include tablet{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
     img{
         position: absolute;
         top: 0;
         left: 0;
+
+        @include tablet{
+            position: relative;
+        }
     }
 
     .focus__img-vector{
@@ -41,6 +60,10 @@
         top: 0px;
         left: 300px;
         z-index: -1;
+
+        @include tablet{
+            display: none;
+        }
     }
 }
 
@@ -51,10 +74,25 @@
     bottom: -100px;
     right: 0;
 
+    @include tablet{
+        position: relative;
+        bottom: 0;
+        left: 0;
+        display: none;
+    }
+
+    img{
+        position: relative;
+    }
+
     .focus__img-vector{
         position: absolute;
         bottom: 0;
         left: -300px;
         z-index: -1;
+
+        @include tablet{
+            display: none;
+        }
     }
 }

@@ -3,6 +3,13 @@
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     margin: 100px 0;
+
+    @include mobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
 .serveces_item{
@@ -12,15 +19,36 @@
     transition: .4s linear;
     cursor: pointer;
 
+    @include mobile{
+        overflow: inherit;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transform: scale(.7);
+    }
+
     &:hover{
         width: 100%;
+        
     }
 
     &:nth-child(2){
         margin-top: 150px;
+
+        @include mobile{
+            margin-top: 30px;
+            
+            flex-direction: column-reverse;
+        }
     }
     &:nth-child(3){
         margin-top: 100px;
+
+        @include mobile{
+            margin-top: 30px;
+        }
     }
     
 }
@@ -48,6 +76,13 @@
         line-height: 48px;
         width: 320px;
         margin-bottom: 35px;
+    }
+
+    @include mobile{
+        bottom: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
     }
 
 }

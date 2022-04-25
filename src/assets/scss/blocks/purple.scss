@@ -1,6 +1,10 @@
 .section__purple{
     padding: 300px 0;
     background-color: #C2B8CC;
+
+    @include mobile{
+        padding: 20px 0;
+    }
 }
 
 .purple__item{
@@ -11,6 +15,10 @@
     position: relative;
     width: 458px;
     margin: 0 auto;
+
+    @include tablet{
+        transform: scale(.5);
+    }
 }
 
 .purple__img{

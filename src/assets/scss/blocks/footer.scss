@@ -4,6 +4,20 @@
     .container{
         display: flex;
         justify-content: space-between;
+
+        @include tablet{
+            justify-content: space-around;
+        }
+
+        @include mobile{
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+
+    @include mobile{
+        padding: 40px 0;
     }
 }
 
@@ -12,6 +26,12 @@
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 75px;
     grid-row-gap: 20px;
+
+    @include mobile{
+        display: flex;
+        grid-column-gap: 30px;
+        margin-bottom: 10px;
+    }
 }
 
 .footer__item{
@@ -30,5 +50,9 @@
         font-size: 30px;
         line-height: 38px;
         color: $red;
+    }
+
+    @include mobile{
+        text-align: center;
     }
 }

@@ -12,30 +12,7 @@ $('.scrollto').on('click', function() {
     return false;
 });
 
-$('.modal__btn-active').on('click', function() {
-    $('.modal').addClass('active');
+$('.navBtn__close').on('click', function() {
+    $('.nav__item-left').toggleClass('active');
 });
-
-$('.close__btn').on('click', function() {
-    $('.modal').removeClass('active');
-});
-
-$('.btn__close').on('click', function() {
-    $('.nav').toggleClass('active');
-});
-
-$('.btn__nav').on('click', function() {
-    $('.nav').toggleClass('active');
-    $('.btn__nav').toggleClass('active');
-    $('.head__btn').toggleClass('active');
-    $('.header__logo').toggleClass('active');
-    $('.header').toggleClass('active');
-});
-
-$('.burger__btn').on('click', function() {
-    $('.btn__menu').toggleClass('active');
-    $('.menu').toggleClass('active');
-    $('body').toggleClass('active');
-});
-
 
